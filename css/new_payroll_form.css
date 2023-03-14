@@ -168,6 +168,14 @@ select {
     text-align: center;
 }
 
+/*UC-UC 2 – On Document Load Set Event Listeners*/
+error-output{
+    margin-left:10px;
+    font-size:12px;
+    font-style:italic;
+    color:red;
+}
+
 @media only screen and (max-width: 960px) {
     .cancelButton {
         margin-left: 0px;
