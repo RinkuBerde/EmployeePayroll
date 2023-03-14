@@ -69,3 +69,16 @@ const getInputElementValue = (id) => {
     let value = document.getElement(id).value;
     return value;
 }
+/** UC-04---save employee object into local storage */
+function createAndUpdateStorage(employeePayrollList) {
+    let employeePayrollList = JSON.parse(localStorage.getItem("EmployeePayrollList"));
+    if (employeePayrollList != undefined) {
+        employeePayrollList.push(employeePayrollList);
+    }
+    else {
+        employeePayrollListt = [employeePayrollList];
+    }
+    alert(employeePayrollList.toString);
+    localStorage.setItem('EmployeePayrollList', JSON.stringify(employeePayrollList));
+    
+}
